@@ -7,6 +7,7 @@ const postsRoute = require('./Routes/posts')
 const app = express()
 app.use(cors())
 app.use(express.json())
+app.use('/uploads', express.static('uploads'))
 
 const url = `mongodb+srv://myTodos:rafi1234@cluster0.fltsf.mongodb.net/restful-api?retryWrites=true&w=majority`
 
